@@ -1,0 +1,138 @@
+@import 'colors';
+@import 'buttons';
+@import 'typo';
+
+body{
+    font-family:'Rubik', sans-serif ;
+}
+
+.pricing{
+    background: $lilpur;
+    padding: 70px 0 70px 0;
+    margin-top: 70px;
+    .master-card{
+        padding: 30px;
+        border-radius: 22px;
+        .btn{
+            width: 100%;
+            margin-top: 20px;
+        }
+    .item-benefit{
+        margin-bottom: 20px;
+        img{
+            float: left;
+            margin-right: 8px;
+        }
+        p{
+        font-size: 16px;
+        font-weight: map-get($font-weight,medium );
+        }
+    }
+     .support{
+        font-size: 16px;
+        font-weight: map-get($font-weight,regular);
+        color: $newpur;
+        margin-bottom: 40px;
+        }        
+    .price{
+        font-size: 36px;
+        font-family: map-get($font-weight , semibold);
+    }
+    .name{
+        font-weight: map-get($font-weight,semibold );
+    }
+    .item-benefit{
+        p{
+        color: $navy;
+        }
+    }
+    }
+    .basic-card{
+        @extend .master-card;
+        background: $white;
+        .name{
+            color: $navy;
+        }
+        .price{
+            color: $navy;
+        }
+        .support{
+            color: $newpur;
+        }
+        .item-benefit{
+            p{
+                color: $navy;
+            }
+        }
+    }
+    .most-card{
+        @extend .master-card;
+        background: $blue;
+        .btn-primary{
+            background: $blue-cloud;
+        }
+        .name{
+            color: $white;
+        }
+        .price{
+            color: $white;
+        }
+        .support{
+            color: #82ccfd;
+        }
+        .item-benefit{
+            p{
+                color: $white;
+            }
+        }
+        
+    }
+}
+
+.header{
+    font-weight: map-get($font-weight, semibold );
+    color: $navy;
+    font-size: 46px;
+    line-height:60px;
+    margin-top: 100px;
+}
+.description{
+    font-size: 18px;
+    line-height: 30px;
+    color: $newpur;
+    font-weight: map-get($font-weight, regular);
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.sales{
+    padding-top: 100px;
+    .brand{
+        margin-top:70px ;
+        text-align: center;
+    .brand-logos{
+        width: 724px;
+        }
+    }
+    .copywriting{
+        padding-left: 100px;
+    }
+}
+
+
+.navbar-tp {
+    padding-top: 30px;
+    .navbar-nav{
+        li{
+            padding-left: 50px;
+        }
+        .active{
+            color: $blue !important;
+            font-weight: 700 !important;
+        }
+        .nav-link{
+            color: $navy;
+            font-weight: 500;
+        }
+    }
+}
